@@ -7,7 +7,7 @@ class MyGUI:
 
     def __init__(self, master):
         self.master = master
-        master.geometry("350x300")
+        master.geometry("500x300")
         master.title("Youtube Video Downloader")
 
         self.downloadFrame = tk.Frame(master)
@@ -36,7 +36,6 @@ class MyGUI:
     def downloadVideo(self):
         url = self.linkEntry.get()
         self.download.downloadVideo(url)
-        print("Download Complete!")
 
 
 if __name__ == '__main__':
